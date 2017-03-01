@@ -23,20 +23,6 @@
 					<i class="fa fa-envelope fa-4x">Message</i>
 				</div>
 			</div>
-			<div class="search">
-				<div class="col-md-2 task">
-					<ul>
-						<br>
-						<li><i class="fa fa-music fa-2x"></i>  SOUND</li>
-						<br>
-						<li><i class="fa fa-video-camera fa-2x"></i>  MOVIE</li>
-						<br>
-						<li><i class="fa fa-newspaper-o fa-2x"></i>  DOCUMENTARY</li>
-						<br>
-						<li><i class="fa fa-bicycle fa-2x"></i>  HOBB</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	<script src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/bootstrap.min.js"></script>
