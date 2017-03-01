@@ -1,0 +1,39 @@
+.block1{
+	background-color:green;
+}
+
+.block2{
+	background-color:blue;
+}
+
+
+.block3{
+	background-color:gray;
+}
+
+
+.block4{
+	background-color:red;
+}
+
+.task{
+	background-color:pink;
+	height: 575px;
+	margin:10px;
+	margin-left:0px;
+	padding-left:0px;
+	padding-right:10px;
+}
+
+.task ul{
+	list-style-type:none;
+}
+
+.task2{
+	background-color:purple;
+	color:white;
+	height: 575px;
+	margin:10px
+}
+
+
