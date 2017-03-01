@@ -27,18 +27,15 @@
 				<div class="col-md-2 task">
 					<ul>
 						<br>
-						<li><i class="fa fa-music fa-2x"></i>  MUSIQUE</li>
+						<li><i class="fa fa-music fa-2x"></i>  SOUND</li>
 						<br>
-						<li><i class="fa fa-video-camera fa-2x"></i>  FILM</li>
+						<li><i class="fa fa-video-camera fa-2x"></i>  MOVIE</li>
 						<br>
-						<li><i class="fa fa-newspaper-o fa-2x"></i>  DOCUMENTAIRE</li>
+						<li><i class="fa fa-newspaper-o fa-2x"></i>  DOCUMENTARY</li>
 						<br>
-						<li><i class="fa fa-bicycle fa-2x"></i>  DIVERTISSEMENT</li>
+						<li><i class="fa fa-bicycle fa-2x"></i>  HOBB</li>
 					</ul>
 				</div>
-				<div class="col-md-8 task2">
-					video
-				<div>
 			</div>
 		</div>
 	<script src="./assets/js/jquery.min.js"></script>
