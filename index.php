@@ -1,7 +1,6 @@
 <?php
-//les fonctions
-
 $line="<br>";
+//les fonctions
 
 function f_comparaison ($a,$b)
 {
@@ -46,13 +45,14 @@ function f_remember ($var1, $var2)
 {
 	if (is_numeric($var1) and is_numeric($var2))
 	{
-	    return 'la somme des '.$var1.'et '.$var2. ' est ' .($var1+$var2);
+	    $res='la somme des '.$var1.'et '.$var2. ' est ' .($var1+$var2);
 	}
 	else
 	{
-	    return 'la phrase est ' .$var1.' '.$var2;
-	}	
+	    $res= 'la phrase est ' .$var1.' '.$var2;
+        }
+        return $res;        
 }
 
 
-echo f_remember (3,2);
+echo f_remember ('Bonjour','Mino');
