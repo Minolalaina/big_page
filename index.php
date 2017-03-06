@@ -1,16 +1,58 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>titre de la page</title>
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./assets/css/style.css" >
-	</head>
-	<body>
-                   
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/bootstrap.min.js"></script>
-	</body>	
-</html>
+<?php
+//les fonctions
 
+$line="<br>";
+
+function f_comparaison ($a,$b)
+{
+    $line="<br>";   
+    if ($a>$b)
+        {
+            echo "$a est superieur a $b";
+        }
+    else
+        {
+            echo "$b est inferieur a $a";
+        }
+
+    $c=$a;
+    $a=$b;
+    $b=$c;
+    echo "$line";
+
+    if ($a<$b)      
+        {          
+            echo "$a est inferieur a $b";      
+        }  
+    else      
+        {          
+            echo "$b est superieur a $a";      
+        }   
+}
+
+function f_addition ($a,$b)
+{
+    $c=$a+$b;
+    echo "le resultat de l'addition $a+$b  est $c";
+}
+
+function f_soust ($a,$b)
+{
+    $c=$a-$b;
+    echo "le resultat de la soustraction $a-$b  est $c";
+}
+
+function f_remember ($var1, $var2)
+{
+	if (is_numeric($var1) and is_numeric($var2))
+	{
+	    return 'la somme des '.$var1.'et '.$var2. ' est ' .($var1+$var2);
+	}
+	else
+	{
+	    return 'la phrase est ' .$var1.' '.$var2;
+	}	
+}
+
+
+echo f_remember (3,2);
