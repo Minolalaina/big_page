@@ -1,3 +1,23 @@
-form-group{
-    background-color=#3498db;
+.row{
+    background-color: green;
+}
+
+.table1{
+    background-color: red;
+    font-size: 12pt;
+}
+
+.table2{
+    background-color: blue;
+    font-size: 12pt;
+}
+
+.table3{
+    background-color: yellow;
+    font-size: 12pt;
+}
+
+.table4{
+    background-color: gray;
+    font-size: 12pt;
 }

@@ -1,58 +1,45 @@
 <?php
-$line="<br>";
-//les fonctions
-
-function f_comparaison ($a,$b)
-{
-    $line="<br>";   
-    if ($a>$b)
-        {
-            echo "$a est superieur a $b";
+    function mult(){
+        $res='';
+        for ($i=2; $i<=3;$i++){
+             for ($j=1; $j<=10; $j++){
+                $res=$res. ' ' .$i. ' x ' .$j. ' = ' .$i*$j. '<br>';
+            }
         }
-    else
-        {
-            echo "$b est inferieur a $a";
-        }
+        return $res;
+    }
+?>
 
-    $c=$a;
-    $a=$b;
-    $b=$c;
-    echo "$line";
-
-    if ($a<$b)      
-        {          
-            echo "$a est inferieur a $b";      
-        }  
-    else      
-        {          
-            echo "$b est superieur a $a";      
-        }   
-}
-
-function f_addition ($a,$b)
-{
-    $c=$a+$b;
-    echo "le resultat de l'addition $a+$b  est $c";
-}
-
-function f_soust ($a,$b)
-{
-    $c=$a-$b;
-    echo "le resultat de la soustraction $a-$b  est $c";
-}
-
-function f_remember ($var1, $var2)
-{
-	if (is_numeric($var1) and is_numeric($var2))
-	{
-	    $res='la somme des '.$var1.'et '.$var2. ' est ' .($var1+$var2);
-	}
-	else
-	{
-	    $res= 'la phrase est ' .$var1.' '.$var2;
-        }
-        return $res;        
-}
-
-
-echo f_remember ('Bonjour','Mino');
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>TABLE</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href=".assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-3 table1 text-center">
+                <?php 
+                echo mult(2);
+                 ?>
+            </div>
+            <div class="col-md-3 table2 text-center">
+                <?php 
+                echo mult(3);
+                 ?>
+            </div>
+            <div class="col-md-3 table3 text-center">
+                <?php 
+                echo mult(4);
+                 ?>
+            </div>
+            <div class="col-md-3 table4 text-center">
+                <?php 
+                echo mult(5);
+                 ?>
+            </div>  
+        </div>  
+    </body>    
+ </html>
