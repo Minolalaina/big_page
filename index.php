@@ -1,10 +1,8 @@
 <?php
-    function mult(){
+    function mult($m){
         $res='';
-        for ($i=2; $i<=3;$i++){
-             for ($j=1; $j<=10; $j++){
-                $res=$res. ' ' .$i. ' x ' .$j. ' = ' .$i*$j. '<br>';
-            }
+            for ($i=1; $i<=10; $i++){
+                $res=$res. ' ' .$m. ' x ' .$i. ' = ' .$m*$i. '<br>';
         }
         return $res;
     }
@@ -20,26 +18,14 @@
     </head>
     <body>
         <div class="row">
-            <div class="col-md-3 table1 text-center">
                 <?php 
-                echo mult(2);
-                 ?>
-            </div>
-            <div class="col-md-3 table2 text-center">
-                <?php 
-                echo mult(3);
-                 ?>
-            </div>
-            <div class="col-md-3 table3 text-center">
-                <?php 
-                echo mult(4);
-                 ?>
-            </div>
-            <div class="col-md-3 table4 text-center">
-                <?php 
-                echo mult(5);
-                 ?>
-            </div>  
+                for ($m=1; $m<=900;$m++){
+                    echo '<div class="col-md-2 text-center"> <br>';
+                    echo 'table '.$m. '<br>';
+                    echo mult($m);
+                    echo '</div>';
+                }
+                 ?> 
         </div>  
     </body>    
  </html>
